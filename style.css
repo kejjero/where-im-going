@@ -1,0 +1,158 @@
+.root {
+  font-family: "Roboto", "sans-serif", "Arial";
+  background-color: #fff;
+}
+
+.page {
+  min-width: 300px;
+  max-width: 1920px;
+  margin: 0 auto;
+  color: #000;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+}
+
+/* PLACES */
+
+/* Проблема с высотой картинок */
+
+.places {
+  margin: 0 auto;
+}
+
+.place {
+  display: grid;
+  background-color: #f2f2f2;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "place__image place__box-text";
+}
+
+.place:nth-child(2) {
+  grid-template-areas: "place__box-text place__image";
+}
+
+.place__image {
+  max-width: 100%;
+  grid-area: place__image;
+}
+
+.place__box-text {
+  grid-area: place__box-text;
+}
+
+.place__title {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "sans-serif", "Arial";
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 63px;
+  color: #000000;
+}
+
+.place__paragraph {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "sans-serif", "Arial";
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  color: #333;
+}
+
+/* REVIEWS */
+
+.reviews {
+  width: calc(100% - 2 * 100px);
+  padding: 210px 0;
+  margin: 0 auto;
+}
+
+.reviews__title {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "sans-serif", "Arial";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 19px;
+  color: #eec5a7;
+  text-transform: uppercase;
+  margin-bottom: 55px;
+}
+
+.reviews__subtitle {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "sans-serif", "Arial";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 61px;
+  color: #000000;
+}
+
+.reviews__description {
+  max-width: 630px;
+}
+
+.reviews__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 100px;
+  margin-top: 200px;
+}
+
+.reviews__name {
+  font-family: "Roboto", "sans-serif", "Arial";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.reviews__paragraph {
+  font-family: "Roboto", "sans-serif", "Arial";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #eec5a7;
+  padding: 400px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer__year {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "sans-serif", "Arial";
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 61px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.footer__authors {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "sans-serif", "Arial";
+  font-size: 24px;
+  line-height: 61px;
+  color: #000000;
+}
