@@ -4,7 +4,7 @@
 }
 
 .page {
-  min-width: 300px;
+  min-width: 320px;
   max-width: 1920px;
   margin: 0 auto;
   color: #000;
@@ -49,7 +49,6 @@
   padding: 100px;
   max-height: 800px;
   grid-area: place__box-text;
-
 }
 
 .place__title {
@@ -128,7 +127,7 @@
   line-height: 21px;
   text-transform: uppercase;
   letter-spacing: 0.02em;
-  color: #000000;
+  color: #000;
 }
 
 .reviews__paragraph {
@@ -142,11 +141,12 @@
 /* FOOTER */
 .footer {
   background-color: #eec5a7;
-  padding: 400px 0;
+  padding: 350px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
 }
 
 .footer__year {
@@ -159,7 +159,19 @@
   margin-bottom: 20px;
 }
 
+.footer__copy {
+  font-weight: 400;
+  font-size: 45px;
+}
+
 .footer__authors {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__author {
   margin: 0;
   padding: 0;
   font-size: 24px;
@@ -208,6 +220,14 @@
   .reviews {
     width: calc(100% - 2 * 150px);
   }
+  .reviews__name {
+    font-size: 22px;
+    margin: 0;
+  }
+  .reviews__paragraph {
+    margin-bottom: 0;
+  }
+
   .reviews__items {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -220,9 +240,12 @@
 }
 
 @media screen and (max-width: 1230px) {
-  .places{
+  .places {
     margin: 0 auto;
     padding: 48px 0;
+  }
+  .place__title {
+    max-width: 100%;
   }
   .place {
     width: calc(100% - 2 * 48px);
@@ -230,11 +253,11 @@
     margin: 0 auto;
     padding-top: 70px;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: minmax(max-content, min-content);
+    grid-template-rows: minmax(max-content, 300px) minmax(200px, 800px);
     grid-template-areas:
       "place__box-text"
       "place__image";
-      align-self: flex-start;
+    align-self: flex-start;
   }
   .place__box-text {
     justify-content: flex-start;
@@ -270,6 +293,140 @@
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
+  .places {
+    padding: 24px 0;
+  }
+  .place {
+    padding-top: 50px;
+    width: calc(100% - 2 * 24px);
+    grid-template-rows: minmax(max-content, 300px) minmax(200px, 600px);
+  }
+  .reviews {
+    width: calc(100% - 2 * 24px);
+    padding: 100px 0;
+  }
+  .reviews__items {
+    margin-top: 100px;
+    column-gap: 70px;
+  }
+  .reviews__title {
+    margin-bottom: 35px;
+  }
+  .reviews__subtitle {
+    font-size: 55px;
+    line-height: 60px;
+  }
+  .footer {
+    padding: 150px 0;
+  }
+  .place__paragraph {
+    margin-top: 20px;
+  }
 
+  .footer {
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .reviews__items {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: minmax(max-content);
+    column-gap: 0;
+    row-gap: 20px;
+  }
+  .reviews__items {
+    margin-top: 70px;
+  }
+  .reviews {
+    padding: 70px 0;
+  }
+  .reviews__title {
+    margin-bottom: 20px;
+  }
+  .reviews__subtitle {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .place {
+    width: calc(100% - 2 * 24px);
+    grid-template-rows: minmax(max-content, 300px) minmax(200px, 450px);
+  }
+  .place__title {
+    font-size: 50px;
+    line-height: 55px;
+  }
+  .footer__year {
+    font-size: 35px;
+    line-height: 47px;
+  }
+  .footer__copy {
+    font-size: 30px;
+  }
+  .footer__authors {
+    flex-direction: column;
+  }
+  .footer__author {
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .places {
+    padding: 0;
+  }
+  .place {
+    padding-top: 30 px;
+    width: 100vw;
+    grid-template-rows: minmax(max-content, 300px) minmax(200px, 400px);
+  }
+  .place__description {
+    margin: 0 16px;
+  }
+
+  .place__title {
+    font-size: 43px;
+    margin: 0 16px 16px 16px;
+  }
+
+  .reviews {
+    margin: 0 16px;
+    padding: 50px 0;
+  }
+  .reviews__subtitle {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .reviews__items {
+    row-gap: 25px;
+  }
+  .reviews__items {
+    margin-top: 50px;
+  }
+  .reviews__name {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .reviews__paragraph {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .place {
+    grid-template-rows: minmax(max-content, 300px) minmax(200px, 350px);
+  }
+  .place__title {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0 16px 16px 16px;
+  }
+}
+
+
+
+@media screen and (max-width: 320px) {
+  .place {
+    grid-template-rows: minmax(max-content, 300px) minmax(200px, 320px);
+  }
 }
