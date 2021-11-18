@@ -1,31 +1,25 @@
 @import url(../vendor/normalize.css);
 @import url(../fonts/inter.css);
 
-/*подключение шрифта Roboto*/
+/*Стили для root*/
 
-@import url(../vendor/fonts/roboto/Roboto-Black.ttf);
-@import url(../vendor/fonts/roboto/Roboto-Bold.ttf);
-@import url(../vendor/fonts/roboto/Roboto-Medium.ttf);
-@import url(../vendor/fonts/roboto/Roboto-Regular.ttf);
+@import url(../blocks/root/root.css);
 
-/*Стили для всей page*/
+/*Стили для page*/
 
 @import url(../blocks/page/page.css);
 
-/*Стили для списков ul*/
-
-@import url(../blocks/list/list.css);
-
-/*Стили для nav*/
+/*Стили для блока menu*/
 
 @import url(../blocks/menu/menu.css);
+@import url(../blocks/menu/__list/menu__list.css);
 @import url(../blocks/menu/__link/menu__link.css);
 @import url(../blocks/menu/__item/menu__item.css);
 
-/*стили для intro*/
+/*стили для  блока intro*/
 
 @import url(../blocks/intro/intro.css);
-@import url(../blocks/intro/__paragraph/intro__paragraph.css);
+@import url(../blocks/intro/__box/intro__box.css);
 @import url(../blocks/intro/__title/intro__title.css);
 @import url(../blocks/intro/__subtitle/intro__subtitle.css);
-@import url(../blocks/intro/__img/intro__img.css);
+@import url(../blocks/intro/__image/intro__image.css);
