@@ -40,15 +40,10 @@
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: minmax(max-content);
     column-gap: 0;
-    row-gap: 70px;
+    row-gap: 30px;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .reviews__items {
-    row-gap: 45px;
-  }
-}
 
 @media screen and (max-width: 480px) {
   .reviews__items {
