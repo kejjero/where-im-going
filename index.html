@@ -8,40 +8,53 @@
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <!-- Добавил класс "root" -->
   <body class="root">
     <div class="page">
-      <!-- добавил класс "header" -->
+      <!-- HEADER -->
       <header class="header">
-        <nav class="menu">
-          <ul class="list menu__list">
-            <li class="menu__item"><a class="menu__link" href="#">Мечты</a></li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Ожидания</a>
+        <nav class="header__box">
+          <ul class="header__menu">
+            <li class="header__item">
+              <a class="header__link header_text_theme" href="#">Мечты</a>
             </li>
-            <li class="menu__itemА">
-              <a class="menu__link" href="#">Реальность</a>
+            <li class="header__item">
+              <a class="header__link header_text_theme" href="#">Ожидания</a>
             </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Пожаловаться</a>
+            <li class="header__item">
+              <a class="header__link header_text_theme" href="#">Реальность</a>
             </li>
           </ul>
+          <a class="header__complain header_text_theme" href="#"
+            >Пожаловаться</a
+          >
         </nav>
       </header>
-      <!-- добавил класс "content" -->
       <main class="content">
+
+
+
+        <!-- INTRO -->
         <section class="intro">
-          <!-- заменил intro_paragraph, по БЭМу "Что это? - обертка" box или contain -->
           <div class="intro__box">
-            <!-- поидее "Куда я поеду, как можно.." является подзаголовком, нужно еще погуглить :/
-            подзаголовок же не может быть выше заголовка-->
-            <p class="intro__subtitle">Куда я поеду</p>
-            <h1 class="intro__title">
-              Куда я поеду сразу, как можно будет куда-то поехать
-            </h1>
+            <div class="intro__text">
+              <h1 class="intro__title title">Куда я поеду</h1>
+              <p class="intro__subtitle subtitle">
+                Куда я&nbsp;поеду сразу, как можно&nbsp; будет куда-то поехать
+              </p>
+            </div>
+            <div class="intro__image"></div>
           </div>
-          <img class="intro__image" src="/images/intro-image.jpeg" />
         </section>
+
+
+
+
+
+
+
+
+
+
         <!-- PLACES -->
         <section class="places">
           <div class="place">
@@ -118,8 +131,8 @@
         <!-- REVIEWS -->
         <section class="reviews">
           <div class="reviews__description">
-            <h2 class="reviews__title">Люди</h2>
-            <p class="reviews__subtitle">
+            <h2 class="reviews__title title">Люди</h2>
+            <p class="reviews__subtitle subtitle">
               Что говорят и&nbsp;говорили люди о&nbsp;путешествиях
             </p>
           </div>

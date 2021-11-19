@@ -3,6 +3,10 @@
 }
 
 .menu__item:last-child {
+    padding: 0;
+}
+
+.menu__item:last-child {
     margin-right: 100px;
     padding-right: 100px;
     margin-left: auto;
