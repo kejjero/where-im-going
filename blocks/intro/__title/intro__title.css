@@ -1,0 +1,27 @@
+.intro__title {
+  margin-bottom: 55px;
+}
+
+@media screen and (max-width: 1230px) {
+  .intro__title {
+    margin-bottom: 45px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro__title {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro__title {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .intro__title {
+    margin-bottom: 20px;
+  }
+}

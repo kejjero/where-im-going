@@ -1,0 +1,9 @@
+.intro {
+  margin-top: 130px;
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    margin-top: 0;
+  }
+}

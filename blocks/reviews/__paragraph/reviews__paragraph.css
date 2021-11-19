@@ -1,0 +1,13 @@
+.reviews__paragraph {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+}
+
+@media screen and (max-width: 480px) {
+  .reviews__paragraph {
+    margin-top: 10px;
+  }
+}

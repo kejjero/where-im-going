@@ -1,0 +1,25 @@
+.intro__subtitle {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .intro__subtitle {
+    font-size: 55px;
+    line-height: 65px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro__subtitle {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .intro__subtitle {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}

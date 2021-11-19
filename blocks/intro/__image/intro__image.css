@@ -1,0 +1,9 @@
+.intro__image {
+  margin-right: 135px;
+  background: url(../../../images/intro-image.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  grid-area: intro__image;
+  justify-self: center;
+}

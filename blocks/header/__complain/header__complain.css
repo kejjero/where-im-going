@@ -1,0 +1,9 @@
+/* Для будущего popup'a */
+.header__complain {
+}
+
+@media screen and (max-width: 600px) {
+  .header__complain {
+    margin-top: 35px;
+  }
+}

@@ -1,0 +1,10 @@
+.footer__copy {
+  font-weight: 400;
+  font-size: 45px;
+}
+
+@media screen and (max-width: 600px) {
+  .footer__copy {
+    font-size: 30px;
+  }
+}

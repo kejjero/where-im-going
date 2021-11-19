@@ -1,0 +1,43 @@
+.reviews {
+  width: calc(100% - 2 * 100px);
+  padding: 210px 0;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1600px) {
+  .reviews {
+    padding: 150px 0;
+  }
+}
+
+@media screen and (max-width: 1340px) {
+  .reviews {
+    width: calc(100% - 2 * 150px);
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .reviews {
+    width: calc(100% - 2 * 48px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reviews {
+    width: calc(100% - 2 * 24px);
+    padding: 100px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .reviews {
+    padding: 50px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .reviews {
+    margin: 0 16px;
+    padding: 50px 0;
+  }
+}
